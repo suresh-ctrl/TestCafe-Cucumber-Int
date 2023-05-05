@@ -1,0 +1,110 @@
+[
+  {
+    "description": "As a user enter valid credentials to check successful login message",
+    "keyword": "Feature",
+    "name": "login page",
+    "line": 6,
+    "id": "login-page",
+    "tags": [],
+    "uri": "features\\login_page.feature",
+    "elements": [
+      {
+        "id": "login-page;scenario-outline-name:-enter-credentials-in-login-page-and-get-message-successfully",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "Scenario Outline name: Enter credentials in login page and get message successfully",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "features\\support\\hooks.js:102"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16823000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "user navigates to the heroku form page",
+            "match": {
+              "location": "features\\step_definitions\\login_page_steps.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5312000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "enter username \"tomsmith\" in the username field",
+            "match": {
+              "location": "features\\step_definitions\\login_page_steps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13856000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "enter password \"SuperSecretPassword!\" in the password field",
+            "match": {
+              "location": "features\\step_definitions\\login_page_steps.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1181000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "click submit",
+            "match": {
+              "location": "features\\step_definitions\\login_page_steps.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1094000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "login successfully message is displayed \"You logged into a secure area!\"",
+            "match": {
+              "location": "features\\step_definitions\\login_page_steps.js:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6347000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "features\\support\\hooks.js:121"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

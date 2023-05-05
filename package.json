@@ -1,0 +1,17 @@
+{
+    "scripts": {
+        "test": "cucumber-js features/ -f json:reports/cucumber_report.json",
+        "test-chrome": "cucumber-js --world-parameters '{\"browser\": \"chrome\"}' --format json:./reports/cucumber_report.json",
+        "test-brow": "cucumber-js --world-parameters '{\"skipJsErrors\": \"true\",\"browsers\": \"chrome\"}' --format json:reports/report.json",
+        "test-report": "./node_modules/.bin/cucumber-js features/ -f json:reports/cucumber_report.json"
+    },
+    "name": "integrate-testcafe-cucumber",
+    "description": "An integration of TestCafe and Cucumber-JS",
+    "dependencies": {
+        "cucumber": "^5.1.0",
+        "cucumber-html-reporter": "^2.0.3",
+        "npm": "^6.0.0",
+        "testcafe": "^1.1.0",
+        "react-scripts":"^3.4.1"
+    }
+}
